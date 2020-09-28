@@ -54,6 +54,10 @@
     <input id="subtitle" name="subtitle" value="" onblur="onChange()"><br>
     <label for="units">Units</label>
     <input id="units" name="units" value="" onblur="onChange()"><br>
+    <label for="item1">Item1</label>
+    <input id="item1" name="item1" value="" onblur="onChange()"><br>
+    <label for="item2">Item2</label>
+    <input id="item2" name="item2" value="" onblur="onChange()"><br>
     <label for="mean1">Mean1</label>
     <input id="mean1" name="mean1" value="" onblur="onChange()"><br>
     <label for="sigma1">Sigma1</label>
@@ -157,12 +161,12 @@
 
      series: [
 	 {
-       name: 'Bell curve 1',
+       name: param_dict.item1 || 'Bell curve 1',
        data: coords1,
 	   color: 'rgba(0,0,255,1)',
      },
 	 {
-	   name: 'Bell curve 2',
+	   name: param_dict.item2 || 'Bell curve 2',
 	   data: coords2,
 	   color: 'rgba(255,0,0,1)',
 	 }],
